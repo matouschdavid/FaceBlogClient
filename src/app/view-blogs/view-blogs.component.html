@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let blog of (blogs$ | async)">{{blog.title}}</li>
+</ul>
+
+<button (click)="postBlog()">Post Blog</button>
